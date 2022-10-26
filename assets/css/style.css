@@ -1,0 +1,108 @@
+body{
+    background-color:  white;
+    margin: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.grid-container{
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+}
+
+/* Contenido Principal */
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    height: 60px;
+    font-size: 30px;
+}
+.nav{
+    grid-area: nav;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 20px;
+}
+.main{
+    grid-area: main;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 60px;
+}
+/* Fin Contenido Principal */
+
+/* Lista */
+.nav dt{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.nav dd{
+    margin-inline-start: 0px;
+    font-size: 15px;
+}
+.num{
+    color: grey;
+}
+/* Fin Lista */
+
+/* Cards */
+.grid-container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.card{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+}
+.card .articulo{
+    font-size: 20px;
+    padding: 20px;
+}
+.card .valor{
+    color: grey;
+    font-size: 15px;
+    padding: 10px;
+}
+.card .boton{
+    background-color: green;
+    color: white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Fin Cards */
